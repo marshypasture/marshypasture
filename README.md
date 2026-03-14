@@ -25,7 +25,7 @@ npm run serve
 
 Then open `http://localhost:5173`.
 
-## Update the gallery later
+## Update the gallery later/
 
 Run:
 
