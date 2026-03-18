@@ -315,8 +315,8 @@ function wireUi() {
 }
 
 function initPrefs() {
-  const savedTheme = localStorage.getItem("perry.theme");
-  setTheme(savedTheme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
+  // Force the site to stay in the bright pink theme.
+  setTheme("light");
   setLayout("masonry");
 }
 

@@ -21,21 +21,22 @@
   --ring: 0 0 0 4px rgba(255, 79, 180, 0.22);
 }
 
-html[data-theme="dark"] { /* keep toggle harmless even though we prefer light */
-  --bg: #1a0b15;
-  --bg2: #24101e;
-  --surface: rgba(32, 14, 26, 0.76);
-  --surface-solid: #200e1a;
-  --ink: #ffe9f6;
-  --ink-muted: #ffc2e4;
-  --ink-faint: #ff90cc;
+html[data-theme="dark"] {
+  /* If a user/device forces "dark", keep it bright + pink anyway. */
+  --bg: #fff4fb;
+  --bg2: #ffe6f6;
+  --surface: #ffffff;
+  --surface-solid: #ffffff;
+  --ink: #2b0b1f;
+  --ink-muted: #6c3050;
+  --ink-faint: #9a5d7b;
   --accent: #ff4fb4;
-  --accent2: #c77dff;
-  --accent-hover: #ff79c6;
-  --border: rgba(255, 79, 180, 0.22);
-  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 18px 54px rgba(0, 0, 0, 0.5);
-  --ring: 0 0 0 4px rgba(255, 121, 198, 0.22);
+  --accent2: #ff79c6;
+  --accent-hover: #ff2aa2;
+  --border: rgba(255, 79, 180, 0.18);
+  --shadow: 0 10px 30px rgba(255, 79, 180, 0.12);
+  --shadow-hover: 0 16px 46px rgba(255, 79, 180, 0.22);
+  --ring: 0 0 0 4px rgba(255, 79, 180, 0.22);
 }
 
 * { box-sizing: border-box; }
@@ -66,7 +67,7 @@ a:hover { text-decoration: underline; }
   position: sticky;
   top: 0;
   z-index: 10;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(180deg, #ffffff, #ffeaf6);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -105,7 +106,7 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   cursor: pointer;
   border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface-solid) 70%, transparent);
+  background: linear-gradient(180deg, #ffffff, #ffeaf6);
   color: var(--ink);
   box-shadow: 0 6px 18px rgba(255, 79, 180, 0.12);
   transition: background 0.15s, border-color 0.15s, transform 0.15s, box-shadow 0.2s;
@@ -117,7 +118,7 @@ a:hover { text-decoration: underline; }
 }
 .pill:hover {
   text-decoration: none;
-  background: rgba(255, 79, 180, 0.12);
+  background: rgba(255, 79, 180, 0.16);
   border-color: rgba(255, 79, 180, 0.28);
   transform: translateY(-1px);
 }
@@ -214,7 +215,7 @@ a:hover { text-decoration: underline; }
   font-size: 0.95rem;
   font-family: var(--font-body);
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.84);
+  background: linear-gradient(180deg, #ffffff, #fff1fa);
   border: 1px solid rgba(255, 79, 180, 0.22);
   border-radius: 14px;
   outline: none;
@@ -261,7 +262,7 @@ a:hover { text-decoration: underline; }
 
 /* Panel = gallery container */
 .panel {
-  background: linear-gradient(180deg, #ffffff, #ffeaf6);
+  background: linear-gradient(180deg, #ffffff, #ffd6ee);
   border: 1px solid rgba(255, 79, 180, 0.22);
   border-radius: var(--radius-lg);
   padding: 20px;
