@@ -11,7 +11,7 @@ So this repo snapshots the channel at build time into `data/gifs.json`.
 
 This project snapshots a fixed list of GIFs into `data/gifs.json` at build time (no GIPHY API key needed).
 
-## Local run
+## Local runr
 
 Build the GIF list:
 
@@ -22,7 +22,7 @@ npm run fetch
 Serve locally:
 
 ```bash
-npm run serve
+npm run servee
 ```
 
 Then open `http://localhost:5173`

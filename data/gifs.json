@@ -1,6 +1,55 @@
 {
   "source": "hardcoded GIF_PAGE_URLS (provided by user)",
-  "builtAt": "2026-03-25T13:28:18.986Z",
-  "count": 0,
-  "gifs": []
+  "builtAt": "2026-03-25T14:33:45.700Z",
+  "count": 6,
+  "gifs": [
+    {
+      "id": "6O4i7D7hlyZg2qwjA4",
+      "pageUrl": "https://giphy.com/gifs/animal-marmot-ai-dance-6O4i7D7hlyZg2qwjA4",
+      "title": "animal marmot ai dance",
+      "previewUrl": "https://media.giphy.com/media/6O4i7D7hlyZg2qwjA4/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/6O4i7D7hlyZg2qwjA4/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/6O4i7D7hlyZg2qwjA4/200.gif"
+    },
+    {
+      "id": "MDTqF1nyzBMDTKTHpL",
+      "pageUrl": "https://giphy.com/gifs/smile-cool-guy-hand-up-MDTqF1nyzBMDTKTHpL",
+      "title": "smile cool guy hand up",
+      "previewUrl": "https://media.giphy.com/media/MDTqF1nyzBMDTKTHpL/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/MDTqF1nyzBMDTKTHpL/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/MDTqF1nyzBMDTKTHpL/200.gif"
+    },
+    {
+      "id": "cuF5SqZn8sePIjdNKT",
+      "pageUrl": "https://giphy.com/gifs/eclipse-lunar-red-moon-cuF5SqZn8sePIjdNKT",
+      "title": "eclipse lunar red moon",
+      "previewUrl": "https://media.giphy.com/media/cuF5SqZn8sePIjdNKT/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/cuF5SqZn8sePIjdNKT/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/cuF5SqZn8sePIjdNKT/200.gif"
+    },
+    {
+      "id": "eZ6PcI6qswEpmv8ROo",
+      "pageUrl": "https://giphy.com/gifs/monkey-im-still-waiting-sitting-on-chair-eZ6PcI6qswEpmv8ROo",
+      "title": "monkey im still waiting sitting on chair",
+      "previewUrl": "https://media.giphy.com/media/eZ6PcI6qswEpmv8ROo/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/eZ6PcI6qswEpmv8ROo/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/eZ6PcI6qswEpmv8ROo/200.gif"
+    },
+    {
+      "id": "DlCHtTZDM7Vop4P3m0",
+      "pageUrl": "https://giphy.com/gifs/patrick-nothing-to-do-list-DlCHtTZDM7Vop4P3m0",
+      "title": "patrick nothing to do list",
+      "previewUrl": "https://media.giphy.com/media/DlCHtTZDM7Vop4P3m0/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/DlCHtTZDM7Vop4P3m0/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/DlCHtTZDM7Vop4P3m0/200.gif"
+    },
+    {
+      "id": "z5mSMHvUso0iqH6KhM",
+      "pageUrl": "https://giphy.com/gifs/hebrew-was-it-worth-z5mSMHvUso0iqH6KhM",
+      "title": "hebrew was it worth",
+      "previewUrl": "https://media.giphy.com/media/z5mSMHvUso0iqH6KhM/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/z5mSMHvUso0iqH6KhM/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/z5mSMHvUso0iqH6KhM/200.gif"
+    }
+  ]
 }
