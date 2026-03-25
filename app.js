@@ -101,6 +101,18 @@ function renderGallery() {
   const gallery = $("#gallery");
   gallery.innerHTML = "";
 
+  if (!state.filtered.length) {
+    const empty = document.createElement("div");
+    empty.className = "emptyState";
+    empty.innerHTML = `
+      <div class="emptyState__title">No GIFs loaded yet</div>
+      <div class="emptyState__sub">Add your GIPHY GIF URLs and run the fetch script.</div>
+    `;
+    gallery.append(empty);
+    updateMeta();
+    return;
+  }
+
   const frag = document.createDocumentFragment();
   for (const gif of state.filtered) {
     const card = document.createElement("article");

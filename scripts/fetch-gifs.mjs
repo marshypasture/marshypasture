@@ -10,14 +10,8 @@
 import { writeFile } from "node:fs/promises";
 
 // Hardcoded list: GIF page URLs to show on the site.
-const GIF_PAGE_URLS = [
-  "https://giphy.com/gifs/speed-oh-my-god-ishowspeed-1MfLI2gGVWnnbtF6vY",
-  "https://giphy.com/gifs/lior-sorin-hold-on-lemme-read-it-let-me-Ckt3O6IraLCqm89ts8",
-  "https://giphy.com/gifs/excited-spongebob-i-want-this-ajSYYvOLFIDLfSYRVu",
-  "https://giphy.com/gifs/mmm-old-lady-you-sure-kjWtPiTfkg26BwJ5vL",
-  "https://giphy.com/gifs/diva-girly-girl-as-you-should-YwoMab1xWp5CfkRAg0",
-  "https://giphy.com/gifs/girly-girl-mayagifs-yourgirlmaya-e5ucls4LRi7MmAC4wQ",
-];
+// Paste your GIPHY GIF URLs here to start a new set.
+const GIF_PAGE_URLS = [];
 
 function cleanUrl(raw) {
   return raw

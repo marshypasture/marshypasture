@@ -45,7 +45,7 @@
           <span class="brand__text">ozdagifer</span>
         </a>
 
-        <nav class="top__nav" aria-label="Links">
+        <div class="top__nav" aria-label="Links">
           <a
             class="pill pill--ghost"
             href="https://www.instagram.com/ozdagifer/"
@@ -60,95 +60,52 @@
             rel="noreferrer"
             >GIPHY Channel</a
           >
-          <button class="pill pill--ghost" id="openSuggest" type="button">
-            Request GIF
-          </button>
-        </nav>
+        </div>
       </div>
     </header>
 
     <main class="wrap">
-      <section class="hero">
-        <div class="hero__text">
-          <h1 class="hero__title">ozdagifer</h1>
-          <img
-            class="hero__logo"
-            src="https://scontent.cdninstagram.com/v/t51.82787-19/658431258_18069686921312845_4183453006961826053_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4yNTYuQzMifQ%3D%3D&_nc_ohc=Ilgs5cCYtb8Q7kNvwFHUI1h&_nc_oc=AdpPIRzpGgfzUmQrHaVz2G4JDPa8qPBgD3tGJqusXKWbbSEk8tWFeTOHjUJU-htZ3aY&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=osmA8moZtHO6svNw_y3dVg&_nc_ss=7a32e&oh=00_AfzID8vQaoJtdoaLByTUIs88l22jILZ4rXkLg1ZZOMP-Wg&oe=69C9B1BF"
-            alt="ozdagifer logo"
-            loading="eager"
-            decoding="async"
-          />
-          <p class="hero__subtitle">
-            Girly blue reactions, memes, and perfectly timed loops.
-          </p>
+      <div class="homeGrid">
+        <section class="heroCard" aria-label="Intro">
+          <div class="heroCard__inner">
+            <h1 class="hero__title">ozdagifer</h1>
+            <img
+              class="hero__logo"
+              src="https://scontent.cdninstagram.com/v/t51.82787-19/658431258_18069686921312845_4183453006961826053_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4yNTYuQzMifQ%3D%3D&_nc_ohc=Ilgs5cCYtb8Q7kNvwFHUI1h&_nc_oc=AdpPIRzpGgfzUmQrHaVz2G4JDPa8qPBgD3tGJqusXKWbbSEk8tWFeTOHjUJU-htZ3aY&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=osmA8moZtHO6svNw_y3dVg&_nc_ss=7a32e&oh=00_AfzID8vQaoJtdoaLByTUIs88l22jILZ4rXkLg1ZZOMP-Wg&oe=69C9B1BF"
+              alt="ozdagifer logo"
+              loading="eager"
+              decoding="async"
+            />
+            <p class="hero__subtitle">Starting a fresh GIF set. Add new ones and reload.</p>
 
-          <div class="ctaRow" aria-label="Primary links">
-            <a
-              class="btn btn--main btn--giphy"
-              href="https://giphy.com/channel/ozdagifer"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open GIPHY channel"
-            >
-              <span class="btn__icon" aria-hidden="true">
-                <img
-                  class="btn__iconImg btn__iconImg--giphy"
-                  src="https://giphy.com/static/img/giphy-logo.webp"
-                  alt=""
-                  decoding="async"
-                  referrerpolicy="no-referrer"
-                />
-              </span>
-              <span class="btn__label">@ozdagifer on GIPHY</span>
-            </a>
-            <a
-              class="btn btn--main btn--instagram"
-              href="https://www.instagram.com/ozdagifer/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open Instagram profile"
-            >
-              <span class="btn__icon" aria-hidden="true">
-                <svg
-                  class="btn__iconSvg"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                >
-                  <path
-                    d="M7.5 2.75h9A4.75 4.75 0 0 1 21.25 7.5v9A4.75 4.75 0 0 1 16.5 21.25h-9A4.75 4.75 0 0 1 2.75 16.5v-9A4.75 4.75 0 0 1 7.5 2.75Z"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  />
-                  <path
-                    d="M12 16.05a4.05 4.05 0 1 0 0-8.1 4.05 4.05 0 0 0 0 8.1Z"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                  />
-                  <path
-                    d="M17.35 6.85h.01"
-                    stroke="currentColor"
-                    stroke-width="2.6"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <span class="btn__label">@ozdagifer</span>
-            </a>
+            <div class="heroCard__actions">
+              <button class="btn btn--main" id="openSuggest" type="button">Request a GIF</button>
+              <a
+                class="btn btn--ghost btn--giphy"
+                href="https://giphy.com/channel/ozdagifer"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Open GIPHY channel"
+              >
+                Open GIPHY
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="vaultStage" aria-label="Gallery">
+          <div class="vaultStage__head">
+            <div>
+              <div class="vaultStage__eyebrow">GIF VAULT</div>
+              <h2 class="vaultStage__title">Fresh Drop</h2>
+            </div>
+            <div class="vaultStage__meta" id="metaText">Loading…</div>
           </div>
 
-        </div>
-      </section>
-
-      <section class="panel" aria-label="Gallery">
-        <div class="panel__head">
-          <h2 class="panel__title">The Vault ✨</h2>
-          <div class="panel__meta" id="metaText">Loading…</div>
-        </div>
-
-        <div id="error" class="error" hidden></div>
-        <div id="gallery" class="gallery gallery--masonry" aria-live="polite"></div>
-      </section>
+          <div id="error" class="error" hidden></div>
+          <div id="gallery" class="gallery gallery--masonry" aria-live="polite"></div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
