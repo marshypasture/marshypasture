@@ -8,6 +8,7 @@ const state = {
   layout: "masonry",
   search: "",
   theme: "dark",
+  activeGif: null,
 };
 
 function normalize(str) {
@@ -167,6 +168,7 @@ function openModal(gif) {
   const url = $("#modalUrl");
   const open = $("#openOnGiphy");
 
+  state.activeGif = gif;
   title.textContent = gif.title;
   url.textContent = gif.pageUrl;
   open.href = gif.pageUrl;
@@ -185,6 +187,7 @@ function closeModal() {
   modal.setAttribute("aria-hidden", "true");
   $("#modalImg").src = "";
   document.body.style.overflow = "";
+  state.activeGif = null;
 }
 
 function escapeHtml(s) {
@@ -252,6 +255,33 @@ function wireUi() {
       toast("Copy failed (browser permission)");
     }
   });
+
+  // Share (bottom-right floating button)
+  const shareBtn = $("#shareFab");
+  if (shareBtn) {
+    shareBtn.addEventListener("click", async () => {
+      const modal = $("#modal");
+      const fallbackUrl = window.location.href;
+      const shareUrl =
+        modal && !modal.hidden && state.activeGif?.pageUrl
+          ? state.activeGif.pageUrl
+          : fallbackUrl;
+
+      try {
+        if (navigator.share) {
+          await navigator.share({ title: document.title, url: shareUrl });
+        } else {
+          await navigator.clipboard.writeText(shareUrl);
+          toast("Share link copied");
+        }
+      } catch (e) {
+        // If the user cancels the share sheet, don't show an error.
+        if (!String(e?.message || "").toLowerCase().includes("abort")) {
+          toast("Share failed");
+        }
+      }
+    });
+  }
 
   // Suggestions
   const suggestModal = $("#suggestModal");
