@@ -16,7 +16,8 @@ const GIF_PAGE_URLS = [
 "https://giphy.com/gifs/smile-cool-guy-hand-up-MDTqF1nyzBMDTKTHpL",
 "https://giphy.com/gifs/eclipse-lunar-red-moon-cuF5SqZn8sePIjdNKT",
 "https://giphy.com/gifs/monkey-im-still-waiting-sitting-on-chair-eZ6PcI6qswEpmv8ROo",
-"https://giphy.com/gifs/patrick-nothing-to-do-list-DlCHtTZDM7Vop4P3m0"
+"https://giphy.com/gifs/patrick-nothing-to-do-list-DlCHtTZDM7Vop4P3m0",
+"https://giphy.com/gifs/hebrew-was-it-worth-z5mSMHvUso0iqH6KhM"
 
 ];
 
