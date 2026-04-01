@@ -1,4 +1,4 @@
-/* ozdagifer’s GIF Gallery — lightweight client-side UI */
+/* MarshyPasture’s GIF Gallery — lightweight client-side UI */
 
 const $ = (sel, root = document) => root.querySelector(sel);
 

@@ -11,15 +11,7 @@ import { writeFile } from "node:fs/promises";
 
 // Hardcoded list: GIF page URLs to show on the site.
 // Paste your GIPHY GIF URLs here to start a new set.
-const GIF_PAGE_URLS = [
-"https://giphy.com/gifs/animal-marmot-ai-dance-6O4i7D7hlyZg2qwjA4",
-"https://giphy.com/gifs/smile-cool-guy-hand-up-MDTqF1nyzBMDTKTHpL",
-"https://giphy.com/gifs/eclipse-lunar-red-moon-cuF5SqZn8sePIjdNKT",
-"https://giphy.com/gifs/monkey-im-still-waiting-sitting-on-chair-eZ6PcI6qswEpmv8ROo",
-"https://giphy.com/gifs/patrick-nothing-to-do-list-DlCHtTZDM7Vop4P3m0",
-"https://giphy.com/gifs/hebrew-was-it-worth-z5mSMHvUso0iqH6KhM"
-
-];
+const GIF_PAGE_URLS = [];
 
 function cleanUrl(raw) {
   return raw

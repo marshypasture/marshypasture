@@ -1,8 +1,8 @@
-# ozdagifer
+# MarshyPasture
 
-Static HTML/CSS/JS gallery that displays GIFs (snapshot) for **ozdagifer**.
+Static HTML/CSS/JS gallery that displays GIFs (snapshot) for **MarshyPasture**.
 
-> Girly blue reactions, memes, and perfectly timed loops — curated by ozdagifer.
+> Girly blue reactions, memes, and perfectly timed loops — curated by MarshyPasture.
 
 ## How it works
 
@@ -11,7 +11,7 @@ So this repo snapshots the channel at build time into `data/gifs.json`.
 
 This project snapshots a fixed list of GIFs into `data/gifs.json` at build time (no GIPHY API key needed).
 
-## Local runr
+## Local run
 
 Build the GIF list:
 
@@ -22,7 +22,7 @@ npm run fetch
 Serve locally:
 
 ```bash
-npm run servee
+npm run serve
 ```
 
 Then open `http://localhost:5173`
@@ -39,7 +39,7 @@ Commit the updated `data/gifs.json`.
 
 ## GitHub Pages deploy
 
-1. Create a repo named **`MayCodegirl`** or similar.
+1. Create a repo named **`MarshyPasture`** or similar.
 2. Push this project to that repo.
 3. In GitHub repo settings → **Pages**:
    - **Build and deployment**: "Deploy from a branch"
@@ -47,4 +47,4 @@ Commit the updated `data/gifs.json`.
 
 ---
 
-**ozdagifer** — Girly blue reactions and memes.
+**MarshyPasture** — Girly blue reactions and memes.
